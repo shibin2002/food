@@ -4,3 +4,12 @@ services:
     runtime: node
     buildCommand: cd backend && yarn install
     startCommand: cd backend && yarn start
+    envVars:
+      - key: MONGO_URI
+        scope: build,runtime
+      - key: PORT
+        value: "4000"
+        scope: build,runtime
+      - key: NODE_ENV
+        value: "production"
+        scope: build,runtime
