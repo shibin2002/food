@@ -2,9 +2,5 @@ services:
   - type: web
     name: food-backend
     runtime: node
-    rootDir: backend
-    buildCommand: yarn install
-    startCommand: yarn start
-    envVars:
-      - key: NODE_ENV
-        value: production
+    buildCommand: cd backend && yarn install
+    startCommand: cd backend && yarn start

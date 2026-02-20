@@ -1,0 +1,15 @@
+{
+  "name": "food-delivery",
+  "version": "1.0.0",
+  "description": "Food delivery application",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "admin"
+  ],
+  "scripts": {
+    "start": "cd backend && yarn start",
+    "dev": "cd backend && yarn server"
+  }
+}
